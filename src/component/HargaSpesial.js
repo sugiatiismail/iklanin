@@ -8,15 +8,19 @@ import Stack from '@mui/material/Stack';
 import Divider from '@mui/material/Divider';
 
 import GardenProduct from "./GardenProduct";
-
+import useMediaQuery from '@mui/material/useMediaQuery';
+import createTheme from '@mui/material/styles/createTheme';
 
 
 
 export default function HargaSpesial() {
+    const theme = createTheme();
+    const isDesktop = useMediaQuery(theme.breakpoints.up('sm'));
 
     var hargakebon = [
         {
             id: "satu",
+            tumbhnail: "//"
 
         },
         {
@@ -48,19 +52,28 @@ export default function HargaSpesial() {
 
     return (
         <Box paddingTop={6}>
-            <Container >
+            <Container   >
                 <Stack>
-                    <Typography variant="h5">Spesial Hari Ini</Typography>
-                    <Typography paddingBottom={2} variant="h6">Promo menarik dari Sayurbox untuk kamu</Typography>
+                    <Typography fontSize='24px' fontWeight='bold' color='#4D4D4D'>Spesial Hari Ini</Typography>
+                    <Typography paddingBottom={2} fontSize='18px' color='#959595'>Promo menarik dari Sayurbox untuk kamu</Typography>
                 </Stack>
-                <Grid container spacing={3.5}>
-                    {hargakebon.map(item => (
-                        <Grid item key={item.id} xs={1.7}>
-                            <Box sx={{ display: 'flex', justifyContent: 'center' }}>
-                                <GardenProduct />
-                            </Box>
-                        </Grid>
-                    ))}
+                <Grid container spacing={isDesktop? 0: 3.5} columnSpacing={isDesktop ? 0 : -1} marginBottom={6}
+                >
+                    <Box maxWidth sx={{
+                        display: 'flex',
+                        overflowX:isDesktop ? 'block': 'auto',
+                        justifyContent:'center',
+                    
+                    }}>
+                        {hargakebon.map(item => (
+                            <Grid item key={item.id} xs={6} md={1.7} lg={1.7}>
+                                <Box sx={{ display: 'flex', justifyContent: 'center' }}>
+                                    <GardenProduct
+                                    />
+                                </Box>
+                            </Grid>
+                        ))}
+                    </Box>
                 </Grid>
                 <Divider />
             </Container>

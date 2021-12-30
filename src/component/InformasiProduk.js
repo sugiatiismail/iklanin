@@ -5,6 +5,7 @@ import Grid from "@mui/material/Grid";
 
 
 import React from "react";
+import { Divider } from '@mui/material';
 
 
 
@@ -30,7 +31,7 @@ export default function InformasiProduk() {
                             manfaat dan cara penyimpanan produk.
                         </Typography>
                     </Grid>
-                    <Grid item xs={6} >
+                    <Grid item xs={6} marginBottom={4}>
                         <Typography fontSize='20px' color='black' fontWeight='bold'>Status Pemesanan</Typography>
                         <Typography fontSize='18px' color='#4D4D4D'>Bagaimana cara mengecek status pemesanan saya?</Typography>
                         <Typography color='#959595' fontSize='14px'>Pilih menu Transaksi pada Aplikasi Sayurbox atau buka menu Akun
@@ -50,6 +51,7 @@ export default function InformasiProduk() {
                         </Typography>
                     </Grid>
                 </Grid>
+                <Divider/>
             </Container>
         </Box >
 
