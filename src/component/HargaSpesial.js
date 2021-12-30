@@ -67,7 +67,7 @@ export default function HargaSpesial() {
                     }}>
                         {hargakebon.map(item => (
                             <Grid item key={item.id} xs={6} md={1.7} lg={1.7}>
-                                <Box ml= {isDesktop ? 0:60 } sx={{ display: 'flex', justifyContent: 'center' }}>
+                                <Box ml= {isDesktop ? 0:70 } sx={{ display: 'flex', justifyContent: 'center' }}>
                                     <GardenProduct
                                     />
                                 </Box>
