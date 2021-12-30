@@ -59,7 +59,7 @@ export default function HargaSpesial() {
                 </Stack>
                 <Grid container spacing={isDesktop? 0: 3.5} columnSpacing={isDesktop ? 0 : -1} marginBottom={6}
                 >
-                    <Box maxWidth sx={{
+                    <Box  maxWidth sx={{
                         display: 'flex',
                         overflowX:isDesktop ? 'block': 'auto',
                         justifyContent:'center',
@@ -67,7 +67,7 @@ export default function HargaSpesial() {
                     }}>
                         {hargakebon.map(item => (
                             <Grid item key={item.id} xs={6} md={1.7} lg={1.7}>
-                                <Box sx={{ display: 'flex', justifyContent: 'center' }}>
+                                <Box ml= {isDesktop ? 0:60 } sx={{ display: 'flex', justifyContent: 'center' }}>
                                     <GardenProduct
                                     />
                                 </Box>

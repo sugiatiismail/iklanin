@@ -1,5 +1,5 @@
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
-import ShoppingBagIcon from '@mui/icons-material/ShoppingBag';
+import ShoppingBasketOutlinedIcon from '@mui/icons-material/ShoppingBasketOutlined';
 import AppBar from '@mui/material/AppBar';
 // import logoo from '../component/image/logo.png';
 import Box from '@mui/material/Box';
@@ -16,7 +16,7 @@ import useMediaQuery from '@mui/material/useMediaQuery';
 import createTheme from '@mui/material/styles/createTheme';
 import Typography from '@mui/material/Typography';
 import FmdGoodIcon from '@mui/icons-material/FmdGood';
-
+import Divider from '@mui/material/Divider';
 
 export default function Header() {
   const theme = createTheme();
@@ -94,18 +94,21 @@ export default function Header() {
               <Grid item xs>
                 {isDesktop ?
                   <Box sx={{ display: 'flex', justifyContent: 'center' }}>
-                    <Button size='large' variant="outlined" color="success" sx={{ width: 400, textTransform: 'none', borderRadius: 20 }} >
-                      Dikirim ke Pilih Alamat & Tanggal Pengiriman</Button>
+                    <Button startIcon={<FmdGoodIcon />} 
+                    size='small' 
+                    variant="outlined"  
+                    sx={{ width: 400, height: 45, textTransform: 'none', borderRadius: 20, color:"#47b04b",}} >
+                      Dikirim ke Pilih Alamat & Tgl Pengiriman  <Divider orientation="vertical" flexItem />  Desember 31   </Button>
                   </Box>
                   :
                   <></>
                 }
               </Grid>
 
-              <Grid item xs='auto'>
+              <Grid item xs={'auto'}>
                 {isDesktop ?
-                  <Button color="success" variant="outlined" sx={{ height: 41 }} >
-                    <ShoppingBagIcon />
+                  <Button color='inherit' variant="outlined" sx={{ height: 41, color:"#686868" }} >
+                    <ShoppingBasketOutlinedIcon />
                   </Button>
                   :
                   <></>
