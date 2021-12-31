@@ -43,7 +43,7 @@ export default function Header() {
                 <Stack direction='row' mb={-2}>
                   <FmdGoodIcon sx={{ fontSize: 18, marginRight: 0.5, color:'#47b04b' }} />
                   <Typography fontSize={15} textAlign='center' fontWeight='bold' color='#47b04b'>Pilih Alamat & Tanggal Pengiriman</Typography>
-                  <KeyboardArrowDownIcon sx={{ fontSize: 18, marginRight: 0.5 }} color="primary" />
+                  <KeyboardArrowDownIcon sx={{ fontSize: 18, marginRight: 0.5, color:'#47b04b' }}/>
                 </Stack>
               </Stack>
             }

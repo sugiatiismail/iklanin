@@ -27,20 +27,20 @@ export default function DagingSegar() {
                     <Typography fontSize='24px' fontWeight='bold' color='#4D4D4D'>Daging Segar</Typography>
                     <Typography paddingBottom={2} fontSize='18px' color='#959595'>Dipanen dalam 24 jam</Typography>
                 </Stack>
-                <Grid container rowSpacing={isDesktop ? 0 : 1} columnSpacing={isDesktop ? 1 : 3} sx={{ alignItems: 'center' }} paddingBottom={4}>
-                    <Grid item xs={6} md={5.2} lg={5.2} maxWidth>
-                        <Box maxWidth sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center', py: 1}}>
-                            <img src={imagedagingsegar} alt="harga" style={{ height: isDesktop ? 164 : 110 }} />
+                <Grid container sx={{ alignItems: 'center' }} paddingBottom={4}>
+                    <Grid item xs={12} md={5.2} lg={5.2} >
+                        <Box  sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center', py: 1}}>
+                            <img src={imagedagingsegar} alt="harga" width='100%' />
                         </Box>
                     </Grid>
-                    <Grid item xs md lg >
+                    <Grid item xs={12} md lg >
                         <Box maxWidth sx={{
                             display: 'flex',
                             overflowX: isDesktop ? 'block' : 'auto',
                             justifyContent: 'center', alignItems:'center'
 
                         }}>
-                                <Stack spacing={1.5} maxWidth direction='row'>
+                                <Stack spacing={1} maxWidth direction='row'>
                                     <ProductItem />
                                     <ProductItem />
                                     <ProductItem />

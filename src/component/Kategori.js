@@ -1,6 +1,5 @@
 import { Typography } from "@mui/material";
 import Box from '@mui/material/Box';
-import Button from '@mui/material/Button';
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 import Stack from "@mui/material/Stack";
@@ -28,195 +27,161 @@ import sarapan from '../component/image/sarapan.jpg';
 import spromo from '../component/image/spromo.jpg';
 import hw from '../component/image/hw.jpg';
 import ia from '../component/image/ia.jpg';
-
+import useMediaQuery from '@mui/material/useMediaQuery';
+import createTheme from '@mui/material/styles/createTheme';
 
 
 
 
 export default function Kategori() {
+    const theme = createTheme();
+    const isDesktop = useMediaQuery(theme.breakpoints.up('sm'));
 
 
     return (
         <Box paddingTop={4}>
             <Container >
-            <Typography fontSize='24px' fontWeight='bold'>Kategori</Typography>
+                <Typography fontSize='24px' fontWeight='bold'>Kategori</Typography>
                 <Grid container>
-                        <Grid item xs={3} md={1.5}  lg={1.5}>
-                            <Stack>
-                                <Button>
-                                    <img src={spekta} alt="spekta" style={{ height: 40 }} />
-                                </Button>
-                                <Button sx={{textTransform:'none'}} color="inherit" variant="text">SPEKTA!</Button>
+                    <Grid item xs={3} md={1.5} lg={1.5}>
+                        <Stack spacing={3} alignItems='center' justifyContent='center' width={isDesktop ? 140 : 80} height={310}>
+                            <Stack alignItems='center'>
+                                <img src={spekta} alt="spekta" height={isDesktop ? 55 : 40} width={isDesktop ? 55 : 40} />
+                                <Typography color="inherit" fontSize='15px'>SPEKTA!</Typography>
                             </Stack>
-
-                            <Stack>
-                                <Button>
-                                <img src={kd} alt="kd" style={{ height: 40 }} />
-                                </Button>
-                                <Button sx={{textTransform:'none'}} color="inherit" variant="text">Kuliner Dunia</Button>
+                            <Stack alignItems='center' width={isDesktop ? 200:20}>
+                                <img src={kd} alt="kd" height={isDesktop ? 45 : 30} width={isDesktop ? 45 : 30} />
+                                <Typography color="inherit" fontSize='15px' textAlign='center'>Kuliner Dunia</Typography>
                             </Stack>
-
-                            <Stack>
-                                <Button>
-                                    <img src={pk} alt="pk" style={{ height: 40 }} />
-                                </Button>
-                                <Button sx={{textTransform:'none'}} color="inherit" variant="text">Produk Kesehatan</Button>
+                            <Stack alignItems='center' width={isDesktop ? 200:20}>
+                                <img src={pk} alt="pk" height={isDesktop ? 55 : 40} width={isDesktop ? 55 : 40} />
+                                <Typography color="inherit" fontSize='15px' textAlign='center'>Produk Kesehatan</Typography>
                             </Stack>
-                        </Grid>
+                        </Stack>
+                    </Grid>
 
-                        <Grid item xs={3} md={1.5}  lg={1.5}>
-                            <Stack>
-                                <Button>
-                                    <img src={sp} alt="sp" style={{ height: 40 }} />
-                                </Button>
-                                <Button sx={{textTransform:'none'}} color="inherit" variant="text">Semua Produk</Button>
+                    <Grid item xs={3} md={1.5} lg={1.5}>
+                        <Stack spacing={isDesktop? 3 : 2} alignItems='center' justifyContent='center' width={isDesktop ? 140 : 80}  height={isDesktop ? 310 : 300} >
+                            <Stack alignItems='center' width={isDesktop ? 200:20}>
+                                <img src={sp} alt="sp" height={isDesktop ? 55 : 40} width={isDesktop ? 55 : 40} />
+                                <Typography color="inherit" fontSize='15px' textAlign='center'>Semua Produk!</Typography>
                             </Stack>
-
-                            <Stack>
-                                <Button>
-                                    <img src={jl} alt="jl" style={{ height: 40 }} />
-                                </Button>
-                                <Button sx={{textTransform:'none'}} color="inherit" variant="text">Jajanan Lokal</Button>
+                            <Stack alignItems='center' width={isDesktop ? 200:20}>
+                                <img src={jl} alt="jl" height={isDesktop ? 45 : 30} width={isDesktop ? 45 : 30} />
+                                <Typography color="inherit" fontSize='15px' textAlign='center'>Jajanan Lokal</Typography>
                             </Stack>
-
-                            <Stack>
-                                <Button>
-                                    <img src={mr} alt="mr" style={{ height: 40 }} />
-                                </Button>
-                                <Button sx={{textTransform:'none'}} color="inherit" variant="text">Makanan Ringan</Button>
+                            <Stack alignItems='center' width={isDesktop ? 200:20}>
+                                <img src={mr} alt="mr" height={isDesktop ? 55 : 40} width={isDesktop ? 55 : 40} />
+                                <Typography color="inherit" fontSize='15px' textAlign='center'>Makanan Ringan </Typography>
                             </Stack>
-                        </Grid>
+                        </Stack>
+                    </Grid>
 
-                        <Grid item xs={3} md={1.5}  lg={1.5}>
-                            <Stack>
-                                <Button>
-                                    <img src={terbaru} alt="terbaru" style={{ height: 40 }} />
-                                </Button>
-                                <Button sx={{textTransform:'none'}} color="inherit" variant="text">Terbaru</Button>
+
+                    <Grid item xs={3} md={1.5} lg={1.5}>
+                        <Stack spacing={3} alignItems='center' justifyContent='center' height={isDesktop ? 310 : 300} width={isDesktop ? 140 : 80} >
+                            <Stack alignItems='center'>
+                                <img src={terbaru} alt="terbaru" height={isDesktop ? 55 : 40} width={isDesktop ? 55 : 40} />
+                                <Typography color="inherit" fontSize='15px'>Terbaru</Typography>
                             </Stack>
-
-                            <Stack>
-                                <Button>
-                                    <img src={stk} alt="stk" style={{ height: 40 }} />
-                                </Button>
-                                <Button sx={{textTransform:'none'}} color="inherit" variant="text">Susu, Telur, Keju</Button>
+                            <Stack alignItems='center' width={isDesktop ? 200:100}>
+                                <img src={stk} alt="stk" height={isDesktop ? 45 : 30} width={isDesktop ? 45 : 30} />
+                                <Typography color="inherit" fontSize='15px' textAlign='center'>Susu, Telur, dan Keju</Typography>
                             </Stack>
-
-                            <Stack>
-                                <Button>
-                                    <img src={rt} alt="rt" style={{ height: 40 }} />
-                                </Button>
-                                <Button sx={{textTransform:'none'}} color="inherit" variant="text">Rumah Tangga</Button>
+                            <Stack alignItems='center' width={isDesktop ? 200:20}>
+                                <img src={rt} alt="rt" height={isDesktop ? 55 : 40} width={isDesktop ? 55 : 40} />
+                                <Typography color="inherit" fontSize='15px' textAlign='center'>Rumah Tangga </Typography>
                             </Stack>
-                        </Grid>
+                        </Stack>
+                    </Grid>
 
-                        <Grid item xs={3} md={1.5}  lg={1.5}>
-                            <Stack>
-                                <Button>
-                                    <img src={vegetables} alt="vegetables" style={{ height: 40 }} />
-                                </Button>
-                                <Button sx={{textTransform:'none'}} color="inherit" variant="text">Vegetables</Button>
+
+
+                    <Grid item xs={3} md={1.5} lg={1.5}>
+                        <Stack spacing={3} alignItems='center' justifyContent='center' height={isDesktop ? 310 : 280} width={isDesktop ? 140 : 80}>
+                            <Stack alignItems='center'>
+                                <img src={vegetables} alt="vegetables" height={isDesktop ? 55 : 40} width={isDesktop ? 55 : 40} />
+                                <Typography color="inherit" fontSize='15px'>Vegetables</Typography>
                             </Stack>
-
-                            <Stack>
-                                <Button>
-                                    <img src={pm} alt="pm" style={{ height: 40 }} />
-                                </Button>
-                                <Button sx={{textTransform:'none'}} color="inherit" variant="text">Pojok Minuman</Button>
+                            <Stack alignItems='center' width={isDesktop ? 200:20}>
+                                <img src={pm} alt="pm" height={isDesktop ? 45 : 30} width={isDesktop ? 45 : 30} />
+                                <Typography color="inherit" fontSize='15px' textAlign='center'>Pojok Minuman</Typography>
                             </Stack>
-
-                            <Stack>
-                                <Button>
-                                    <img src={baking} alt="baking" style={{ height: 40 }} />
-                                </Button>
-                                <Button sx={{textTransform:'none'}} color="inherit" variant="text">Baking</Button>
+                            <Stack alignItems='center'>
+                                <img src={baking} alt="baking" height={isDesktop ? 55 : 40} width={isDesktop ? 55 : 40} />
+                                <Typography color="inherit" fontSize='15px'>Baking </Typography>
                             </Stack>
-                        </Grid>
+                        </Stack>
+                    </Grid>
 
-                        <Grid item xs={3} md={1.5}  lg={1.5}>
-                                <Stack>
-                                    <Button>
-                                        <img src={fruits} alt="fruits" style={{ height: 40 }} />
-                                    </Button>
-                                    <Button sx={{textTransform:'none'}} color="inherit" variant="text">Fruits</Button>
-                                </Stack>
 
-                                <Stack>
-                                    <Button>
-                                        <img src={kdapur} alt="kdapur" style={{ height: 40 }} />
-                                    </Button>
-                                    <Button sx={{textTransform:'none'}} color="inherit" variant="text">Kebutuhan Dapur</Button>
-                                </Stack>
-
-                                <Stack>
-                                    <Button>
-                                        <img src={organik} alt="organik" style={{ height: 40 }} />
-                                    </Button>
-                                    <Button sx={{textTransform:'none'}} color="inherit" variant="text">Organik</Button>
-                                </Stack>
-                        </Grid>
-
-                        <Grid item xs={3} md={1.5}  lg={1.5}>
-                            <Stack>
-                                <Button>
-                                    <img src={protein} alt="protein" style={{ height: 40 }} />
-                                </Button>
-                                <Button sx={{textTransform:'none'}} color="inherit" variant="text">Protein</Button>
+                    <Grid item xs={3} md={1.5} lg={1.5}>
+                        <Stack spacing={3} alignItems='center' justifyContent='center'  height={isDesktop ? 310 : 275}  width={isDesktop ? 140 : 80} >
+                            <Stack alignItems='center'>
+                                <img src={fruits} alt="fruits" height={isDesktop ? 55 : 40} width={isDesktop ? 55 : 40} />
+                                <Typography color="inherit" fontSize='15px'>Fruits</Typography>
                             </Stack>
-
-                            <Stack>
-                                <Button>
-                                    <img src={bmp} alt="bmp" style={{ height: 40 }} />
-                                </Button>
-                                <Button sx={{textTransform:'none'}} color="inherit" variant="text">Beras, Mie, Pasta</Button>
+                            <Stack alignItems='center' width={isDesktop ? 200:20}>
+                                <img src={kdapur} alt="kdapur" height={isDesktop ? 45 : 30} width={isDesktop ? 45 : 30} />
+                                <Typography color="inherit" fontSize='15px' textAlign='center'>Kebutuhan Dapur</Typography>
                             </Stack>
-
-                            <Stack>
-                                <Button>
-                                    <img src={terlaris} alt="terlaris" style={{ height: 40 }} />
-                                </Button>
-                                <Button sx={{textTransform:'none'}} color="inherit" variant="text">Terlaris</Button>
+                            <Stack alignItems='center'>
+                                <img src={organik} alt="organik" height={isDesktop ? 55 : 40} width={isDesktop ? 55 : 40} />
+                                <Typography color="inherit" fontSize='15px'>Organik </Typography>
                             </Stack>
-                        </Grid>
+                        </Stack>
+                    </Grid>
 
-                        <Grid item xs={3} md={1.5}  lg={1.5}>
-                            <Stack>
-                                <Button>
-                                    <img src={jhm} alt="jhm" style={{ height: 40 }} />
-                                </Button>
-                                <Button sx={{textTransform:'none'}} color="inherit" variant="text">Jaminan Murah</Button>
-                            </Stack>
 
-                            <Stack>
-                                <Button>
-                                    <img src={sarapan} alt="sarapan" style={{ height: 40 }} />
-                                </Button>
-                                <Button sx={{textTransform:'none'}} color="inherit" variant="text">Sarapan</Button>
+                    <Grid item xs={3} md={1.5} lg={1.5}>
+                        <Stack spacing={3} alignItems='center' justifyContent='center' height={isDesktop ? 310 : 270} width={isDesktop ? 140 : 80} >
+                            <Stack alignItems='center'>
+                                <img src={protein} alt="protein" height={isDesktop ? 55 : 40} width={isDesktop ? 55 : 40} />
+                                <Typography color="inherit" fontSize='15px'>Protein</Typography>
                             </Stack>
+                            <Stack alignItems='center' width={isDesktop ? 200:90}>
+                                <img src={bmp} alt="bmp" height={isDesktop ? 45 : 30} width={isDesktop ? 45 : 30} />
+                                <Typography color="inherit" fontSize='15px' textAlign='center'>Beras, Mie, Pasta</Typography>
+                            </Stack>
+                            <Stack alignItems='center'>
+                                <img src={terlaris} alt="terlaris" height={isDesktop ? 55 : 40} width={isDesktop ? 55 : 40} />
+                                <Typography color="inherit" fontSize='15px'>Terlaris </Typography>
+                            </Stack>
+                        </Stack>
+                    </Grid>
 
-                            <Stack>
-                                <Button>
-                                    <img src={spromo} alt="spromo" style={{ height: 40 }} />
-                                </Button>
-                                <Button sx={{textTransform:'none'}} color="inherit" variant="text">Spesial Promo</Button>
-                            </Stack>
-                        </Grid>
 
-                        <Grid item xs={3} md={1.5}  lg={1.5}>
-                            <Stack>
-                                <Button>
-                                    <img src={hw} alt="hw" style={{ height: 40 }} />
-                                </Button>
-                                <Button sx={{textTransform:'none'}} color="inherit" variant="text">Hemat Waktu</Button>
+                    <Grid item xs={3} md={1.5} lg={1.5}>
+                        <Stack spacing={2} alignItems='center' justifyContent='center' height={isDesktop ? 290 : 275} width={isDesktop ? 140 : 80} >
+                            <Stack alignItems='center' width={isDesktop ? 200:20}>
+                                <img src={jhm} alt="jhm" height={isDesktop ? 55 : 40} width={isDesktop ? 55 : 40} />
+                                <Typography color="inherit" fontSize='15px' textAlign='center'>Jaminan Murah</Typography>
                             </Stack>
+                            <Stack alignItems='center'>
+                                <img src={sarapan} alt="sarapan" height={isDesktop ? 45 : 30} width={isDesktop ? 45 : 30} />
+                                <Typography color="inherit" fontSize='15px'>Sarapan</Typography>
+                            </Stack>
+                            <Stack alignItems='center' width={isDesktop ? 200:20}>
+                                <img src={spromo} alt="spromo" height={isDesktop ? 55 : 40} width={isDesktop ? 55 : 40} />
+                                <Typography color="inherit" fontSize='15px' textAlign='center'>Spesial Promo </Typography>
+                            </Stack>
+                        </Stack>
+                    </Grid>
 
-                            <Stack>
-                                <Button>
-                                    <img src={ia} alt="ia" style={{ height: 40 }} />
-                                </Button>
-                                <Button sx={{textTransform:'none'}} color="inherit" variant="text">Ibu & Anak</Button>
+
+                    <Grid item xs={3} md={1.5} lg={1.5}>
+                        <Stack spacing={3} alignItems='center' justifyContent='center'height={isDesktop ? 200 : 160} width={isDesktop ? 140 : 80} >
+                            <Stack alignItems='center'>
+                                <img src={hw} alt="hw" height={isDesktop ? 55 : 40} width={isDesktop ? 55 : 40} />
+                                <Typography color="inherit" fontSize='15px'>Hemat Waktu</Typography>
                             </Stack>
-                        </Grid>
+                            <Stack alignItems='center'>
+                                <img src={ia} alt="ia" height={isDesktop ? 45 : 30} width={isDesktop ? 45 : 30} />
+                                <Typography color="inherit" fontSize='15px'>Ibu & Anak</Typography>
+                            </Stack>
+                        </Stack>
+                    </Grid>
+
                 </Grid>
             </Container>
         </Box >
