@@ -1,0 +1,119 @@
+{
+    "products": [
+        {     
+            "id": "kategori2",
+            "productName": "SPEKTA!",
+            "icon": "https://storage.googleapis.com/dev-sayurbox.appspot.com/sku-lg/1602160712318_scale_500x500_85_color_not_blur_8SU.jpg"
+        },
+        {
+            "id": "kategori2",
+            "productName": "Semua Produk",
+            "icon": "https://ik.imagekit.io/dcjlghyytp1/da45986e187504f4d16f5d0775604033?tr=f-auto"
+        },
+        {
+            "id": "kategori3",
+            "productName": "Terbaru",
+            "icon": "https://storage.googleapis.com/dev-sayurbox.appspot.com/sku-lg/1631102611565_scale_500x500_85_color_not_blur_VjM.jpg"
+        },
+        {
+            "id": "kategori4",
+            "productName": "Vegetables",
+            "icon": "https://ik.imagekit.io/dcjlghyytp1/6df8294c019cd92598559fff837ce09a?tr=f-auto"
+        },
+        {
+            "id": "kategori5",
+            "productName": "Fruits",
+            "icon": "https://ik.imagekit.io/dcjlghyytp1/c8328332d4f731f292ae3ce96dfa0517?tr=f-auto"
+        },
+        {
+            "id": "kategori6",
+            "productName": "Protein",
+            "icon": "https://storage.googleapis.com/dev-sayurbox.appspot.com/sku-lg/1632112230216_scale_500x500_85_color_not_blur_kOW.jpg"
+        },
+        {
+            "id": "kategori7",
+            "productName": "Jaminan Harga Murah",
+            "icon": "https://ik.imagekit.io/dcjlghyytp1/a1255f171edc9b332005bd94fd054bd7?tr=f-auto"
+        },
+        {
+            "id": "kategori8",
+            "productName": "Hemat Waktu",
+            "icon": "https://storage.googleapis.com/dev-sayurbox.appspot.com/sku-lg/1631496453811_scale_500x500_85_color_not_blur_wBf.jpg"
+        },
+        {
+            "id": "kategori9",
+            "productName": "Kuliner Dunia",
+            "icon": "https://storage.googleapis.com/dev-sayurbox.appspot.com/sku-lg/1632391016007_scale_500x500_85_color_not_blur_6Ph.jpg"
+        },
+        {
+            "id": "kategori10",
+            "productName": "Jajanan Lokal",
+            "icon": "https://storage.googleapis.com/dev-sayurbox.appspot.com/sku-lg/1632391104706_scale_500x500_85_color_not_blur_ByS.jpg"
+        },
+        {
+            "id": "kategori11",
+            "productName": "Susu, Telur dan Keju",
+            "icon": "https://storage.googleapis.com/dev-sayurbox.appspot.com/sku-lg/1574841564376_scale_500x500_85_color_not_blur_T5b.jpg"
+        },
+        {
+            "id": "kategori12",
+            "productName": "Pojok Minuman",
+            "icon": "https://storage.googleapis.com/dev-sayurbox.appspot.com/sku-lg/1632391143099_scale_500x500_85_color_not_blur_hLE.jpg"
+        },
+        {
+            "id": "kategori13",
+            "productName": "Kebutuhan Dapur",
+            "icon": "https://storage.googleapis.com/dev-sayurbox.appspot.com/sku-lg/1632391202476_scale_500x500_85_color_not_blur_Laq.jpg"
+        },
+        {
+            "id": "kategori14",
+            "productName": "Beras, Mie, Pasta",
+            "icon": "https://storage.googleapis.com/dev-sayurbox.appspot.com/sku-lg/1632391821065_scale_500x500_85_color_not_blur_sap.jpg"
+        },
+        {
+            "id": "kategori15",
+            "productName": "Sarapan",
+            "icon": "https://storage.googleapis.com/dev-sayurbox.appspot.com/sku-lg/1632391879931_scale_500x500_85_color_not_blur_tlM.jpg"
+        },
+        {
+            "id": "kategori16",
+            "productName": "Ibu & Anak",
+            "icon": "https://storage.googleapis.com/dev-sayurbox.appspot.com/sku-lg/1626842372514_scale_500x500_85_color_not_blur_dPY.jpg"
+        },
+        {
+            "id": "kategori17",
+            "productName": "Produk Kesehatan",
+            "icon": "https://storage.googleapis.com/dev-sayurbox.appspot.com/sku-lg/1630909708121_scale_500x500_85_color_not_blur_WTt.jpg"
+        },
+        {
+            "id": "kategori18",
+            "productName": "Makanan Ringan",
+            "icon": "https://storage.googleapis.com/dev-sayurbox.appspot.com/sku-lg/1632391970896_scale_500x500_85_color_not_blur_2U2.jpg"
+        },
+        {
+            "id": "kategori19",
+            "productName": "Rumah Tangga",
+            "icon": "https://storage.googleapis.com/dev-sayurbox.appspot.com/sku-lg/1632392006039_scale_500x500_85_color_not_blur_WlS.jpg"
+        },
+        {
+            "id": "kategori20",
+            "productName": "Baking",
+            "icon": "https://storage.googleapis.com/dev-sayurbox.appspot.com/sku-lg/1632392214910_scale_500x500_85_color_not_blur_5kw.jpg"
+        },
+        {
+            "id": "kategori21",
+            "productName": "Organik",
+            "icon": "https://ik.imagekit.io/dcjlghyytp1/4ee614930f86a0352cb82a33c44f17a0?tr=f-auto"
+        },
+        {
+            "id": "kategori22",
+            "productName": "Terlaris",
+            "icon": "https://ik.imagekit.io/dcjlghyytp1/d339244b90bff370a17f523ef9d3616d?tr=f-auto"
+        },
+        {
+            "id": "kategori23",
+            "productName": "Spesial Promo",
+            "icon": "https://storage.googleapis.com/dev-sayurbox.appspot.com/sku-lg/1572497285282_scale_500x500_85_color_not_blur_fTQ.jpg"
+        }
+    ]
+}

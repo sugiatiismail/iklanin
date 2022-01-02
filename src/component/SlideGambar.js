@@ -23,8 +23,8 @@ export default function SlideGambar() {
                 <Stack spacing='16px' justifyContent='center' >
                     <Box
                         sx={{
-                            width: 1150,
                             maxWidth: '100%',
+                            maxHeight: '100%'
                         }}>
                         <TextField
                             sx={{ backgroundColor: '#f9f9f9' }}
@@ -42,7 +42,7 @@ export default function SlideGambar() {
                             }}
                         />
                     </Box>
-                    <img src={imageslide} alt="imageslide" style={{ height: isDesktop ? 390 : 130 }} />
+                    <img src={imageslide} alt="imageslide"  />
                 </Stack>
             </Container>
         </Box >

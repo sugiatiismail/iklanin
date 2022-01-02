@@ -1,8 +1,7 @@
 
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import HargaSpesial from "./HargaSpesial";
 import Header from "./Header";
-import Kategori from "./Kategori";
+import Kategori2 from "./kategori2";
 import SlideGambar from "./SlideGambar";
 import KumpulanRekomendasi from "./KumpulanRekomendasi";
 import DagingSegar from "./DagingSegar";
@@ -21,12 +20,10 @@ export default function Home() {
   const isDesktop = useMediaQuery(theme.breakpoints.up('sm'));
   return (
     <div>
-      <Router>
-        <Switch>
-          <Route>
             <Header />
             <SlideGambar />
-            <Kategori />
+            <Kategori2/>
+            {/* <Kategori /> */}
             <HargaSpesial />
             <KumpulanRekomendasi />
             <DagingSegar />
@@ -45,10 +42,6 @@ export default function Home() {
               :
               <MobileHeader />
             }
-
-          </Route>
-        </Switch>
-      </Router>
     </div>
   )
 }

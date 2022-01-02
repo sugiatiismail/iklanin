@@ -8,6 +8,8 @@ import Typography from '@mui/material/Typography'
 import React from "react";
 import { useState } from "react"
 import imagedaging from '../component/image/imagedaging.png';
+import useMediaQuery from '@mui/material/useMediaQuery';
+import createTheme from '@mui/material/styles/createTheme';
 
 
 
@@ -15,8 +17,9 @@ import imagedaging from '../component/image/imagedaging.png';
 
 
 export default function ProductItem() {
-    const [style, setStyle] = useState({ display: 'none' });
-
+    const [style, setStyle] = useState({ display:'none'});
+    const theme = createTheme();
+    const isDesktop = useMediaQuery(theme.breakpoints.up('sm'));
     return (
                 <Paper sx={{ width: 152.5 , height: 302 }} onMouseEnter={e => {
                     setStyle({ display: 'block' });
@@ -44,7 +47,7 @@ export default function ProductItem() {
                         </Stack>
                         <Stack spacing={1}>
                             <Typography fontSize='13px' sx={{ color: "red" }}>Promo!! maksimal 3</Typography>
-                            <Button sx={{bgcolor:'#47b04b'}} variant='contained' style={style}>Beli</Button>
+                            <Button sx={{bgcolor:'#47b04b'}} variant='contained' style={isDesktop?style : {display: 'block' }}>Beli</Button>
                         </Stack>
                     </Stack>
                 </Paper>

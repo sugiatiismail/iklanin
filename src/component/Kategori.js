@@ -39,7 +39,7 @@ export default function Kategori() {
 
 
     return (
-        <Box paddingTop={4}>
+        <Box paddingTop={4} bgcolor='red'>
             <Container >
                 <Typography fontSize='24px' fontWeight='bold'>Kategori</Typography>
                 <Grid container>
