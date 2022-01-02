@@ -33,8 +33,9 @@ export default function Kategori2() {
 }, [])
 
 return (
-    <Box paddingTop={4}>
+    <Box paddingTop={4} >
         <Container >
+        <Typography paddingBottom={3} fontSize='24px' fontWeight='bold'>Kategori</Typography>
             <Grid container spacing={1}>
                 {products.map(product => (
                     < Grid key={product.id} item xs={3} md={1.5} lg={1.5}>

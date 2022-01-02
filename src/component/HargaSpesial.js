@@ -56,7 +56,6 @@ export default function HargaSpesial() {
                     <Typography paddingBottom={2} fontSize='18px' color='#959595'>Promo menarik dari Sayurbox untuk kamu</Typography>
                 </Stack>
                 <Box maxWidth sx={{
-                    bgcolor:'red',
                     display: 'flex',
                     overflowX: isDesktop ? 'block' : 'auto',
                     justifyContent: 'center', alignItems: 'center'
